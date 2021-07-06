@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Button} from "reactstrap"
 import {ToastContainer,toast} from "react-toastify"
+import Home from './components/Home';
 
 function App() {
   const btnHandle = () => {
@@ -10,9 +11,10 @@ function App() {
 
   return (
     <div>
-      <ToastContainer/>
-      <h1>This is Bootstrap Components</h1>
-      <Button color = "warning" outline onClick={btnHandle}>First React Button</Button>
+    <ToastContainer/>
+      <Home/>
+
+     
     </div>
   );
 }

@@ -9,3 +9,4 @@ function Header({name,title}) {
     </div>
   )
 }
+export default Header;
