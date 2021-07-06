@@ -1,25 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import {Button} from "reactstrap"
+import {ToastContainer,toast} from "react-toastify"
 
 function App() {
+  const btnHandle = () => {
+    toast("This is first message" ,{position :"top-center"});
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React JS
-        </a>
-      </header>
+    <div>
+      <ToastContainer/>
+      <h1>This is Bootstrap Components</h1>
+      <Button color = "warning" outline onClick={btnHandle}>First React Button</Button>
     </div>
   );
 }
+
 
 export default App;
